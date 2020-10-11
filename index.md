@@ -2,6 +2,10 @@
 
 I am currently working toward the Ph.D. degree in Computer Science within the framework of a joint thesis supervision between the University of Chile and the Institut Polytechnique de Paris. My current research interests include machine learning for anticipatory networking, user mobility, network privacy/security and QoS monitoring.
 
+## Contact
+
+* [Link](url)
+
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
