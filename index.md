@@ -1,8 +1,6 @@
-## Welcome to GitHub Pages 2
+## About
 
-You can use the [editor on GitHub](https://github.com/jmadariagar/personal_page/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+I am currently working toward the Ph.D. degree in Computer Science within the framework of a joint thesis supervision between the University of Chile and the Institut Polytechnique de Paris. My current research interests include machine learning for anticipatory networking, user mobility, network privacy/security and QoS monitoring.
 
 ### Markdown
 
