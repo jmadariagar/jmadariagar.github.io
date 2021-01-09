@@ -1,6 +1,6 @@
 ## About
 
-I am working toward the graduate MSc at the Department of Mathematics Engineering of the University of Chile. My current research interests include optimization and equilibrium, convex optimization theory, machine learning, optimization from big data, and its applications.
+I am working toward the MSc degree at the Department of Mathematics Engineering of the University of Chile. My current research interests include optimization and equilibrium, convex optimization theory, machine learning, optimization from big data, and its applications.
 
 ## Contact
 
