@@ -12,7 +12,7 @@ I am working toward the MSc degree at the Department of Mathematics Engineering 
 ### Journals
 
 * [Improving Signal Strength Aggregation for Mobile Crowdsourcing Scenarios](https://www.mdpi.com/1424-8220/21/4/1084/htm)<br/>Diego Madariaga, **Javier Madariaga**, Javier Bustos-Jiménez, and Benjamin Bustos. In MDPI Sensors, 2020.
-* [Detecting Anomalies at a TLD Name Server Based on DNS Traffic Predictions]()<br/>Diego Madariaga, **Javier Madariaga**, Martín Panza, Javier Bustos-Jiménez, and Benjamin Bustos. In IEEE Transactions on Network and Service Management, 2020.
+* [Detecting Anomalies at a TLD Name Server Based on DNS Traffic Predictions](https://doi.org/10.1109/TNSM.2021.3051195)<br/>Diego Madariaga, **Javier Madariaga**, Martín Panza, Javier Bustos-Jiménez, and Benjamin Bustos. In IEEE Transactions on Network and Service Management, 2020.
 
 ### International Conferences & Workshops
 
