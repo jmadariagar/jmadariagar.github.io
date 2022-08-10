@@ -5,7 +5,6 @@ I am working toward the MSc degree at the Department of Mathematics Engineering 
 ## Contact
 
 * javier [at] madariaga.cl
-* [Github](https://github.com/jmadariagar)
 
 ## Publications
 
@@ -21,6 +20,8 @@ I am working toward the MSc degree at the Department of Mathematics Engineering 
 * [Analyzing the Adoption of QUIC From a Mobile Development Perspective](https://dl.acm.org/doi/abs/10.1145/3405796.3405830)<br/>Diego Madariaga, Lucas Torrealba, **Javier Madariaga**, Javiera Bermúdez, and Javier Bustos-Jiménez. In Workshop on Evolution, Performance, and Interoperability of QUIC (EPIQ ’20). ACM, 2020.
 
 ## Teaching
+* [2022 Spring] 
+    * Optimal Control: Theory and Laboratory (TA)
 * [2022 Fall] 
     * Modeling and Optimization (TA)
 * [2021 Spring] 
