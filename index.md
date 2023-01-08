@@ -1,6 +1,6 @@
 ## About
 
-I am working toward the PhD degree at the [Department of Mathematics](https://math.sciences.ncsu.edu) of the NC State University, under the supervision of [Patrick Combettes](https://pcombet.math.ncsu.edu). In 2022 I completed my MSc degree at the Department of Mathematics Engineering of the University of Chile under the supervision of [Héctor Ramírez](https://sites.google.com/site/hectorramirezhomepage/home). My current research interests include optimization and equilibrium, conic programming and variational analysis.
+I am working toward the PhD degree at the [Department of Mathematics](https://math.sciences.ncsu.edu) of the NC State University, under the supervision of [Patrick Combettes](https://pcombet.math.ncsu.edu). In 2022 I completed my MSc degree at the [Department of Mathematics Engineering](http://www.dim.uchile.cl) of the University of Chile under the supervision of [Héctor Ramírez](https://sites.google.com/site/hectorramirezhomepage/home). My current research interests include optimization and equilibrium, conic programming and variational analysis.
 
 ## Contact
 
