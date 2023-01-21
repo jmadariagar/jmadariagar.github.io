@@ -22,7 +22,8 @@ I am working toward the PhD degree at the [Department of Mathematics](https://ma
 ### University of Chile
 * Linear Algebra (TA) [2017 Spring]
 * Advanced Calculus (TA) [2018 Spring]
-* Measure Theory (TA) [2019 Spring], Mathematical Optimization (TA) [2020 Fall] 
+* Measure Theory (TA) [2019 Spring]
+* Mathematical Optimization (TA) [2020 Fall] 
 * Optimal Control: Theory and Laboratory (TA) [2020 Spring, 2021 Spring, 2022 Spring] 
 * Stochastic Models in Engineering Systems (TA) [2020 Spring] 
 * Nonlinear Optimization (TA) [2021 Fall] 
