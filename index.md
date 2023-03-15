@@ -1,6 +1,6 @@
 ## About
 
-I am a Ph.D. Student at the [Department of Mathematics](https://math.sciences.ncsu.edu) of NC State University under the supervision of [Patrick L. Combettes](https://pcombet.math.ncsu.edu). In 2022 I completed my MSc degree at the [Department of Mathematics Engineering](http://www.dim.uchile.cl) of the University of Chile under the advice of [Héctor Ramírez C.](https://sites.google.com/site/hectorramirezhomepage/home) After, I worked at [NIC Labs Research Labs](https://niclabs.cl/) as Undergraduate Research Assistant, where I focused on implementing Stochastic and Optimization Models when studying Internet QoS. My research interests are optimization and equilibrium, nonlinear analysis, convex optimization, and variational analysis.
+I am a Ph.D. Student at the [Department of Mathematics](https://math.sciences.ncsu.edu) of NC State University under the supervision of [Patrick L. Combettes](https://pcombet.math.ncsu.edu). In 2022 I completed my MSc degree at the [Department of Mathematics Engineering](http://www.dim.uchile.cl) of the University of Chile under the advice of [Héctor Ramírez C.](https://sites.google.com/site/hectorramirezhomepage/home) After, I worked at [NIC Chile Research Labs](https://niclabs.cl/) as Undergraduate Research Assistant, where I focused on implementing Stochastic and Optimization Models when studying Internet QoS. My research interests are optimization and equilibrium, nonlinear analysis, convex optimization, and variational analysis.
 
 ## Contact
 SAS Hall 4125; jimadari [at] ncsu.edu
