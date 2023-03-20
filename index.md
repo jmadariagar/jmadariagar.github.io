@@ -22,3 +22,11 @@ SAS Hall 4125; jimadari [at] ncsu.edu
 * Stochastic Models in Engineering Systems (TA) [2020 Spring] 
 * Nonlinear Optimization (TA) [2021 Fall] 
 * Modeling and Optimization (TA) [2022 Fall]
+
+## Theses
+
+### Master in Engineering Sciences, minor Applied Mathematics
+"ON OPTIMALITY CONDITIONS FOR NONLINEAR CONIC PROGRAMMING WITH COMPLEMENTARITY CONSTRAINTS"
+**Abstract:** The main purpose of this thesis is to study the conic generalization of MPCC problems, called Conic Mathematical Programs with Complementarity Constraints (CMPCC). Due to the difficulty in qualifying the points in these problems (e.g., the Robinson constraint qualification does not hold at any feasible point), it is necessary to formulate new concepts and definitions of stationary points with which dual optimality conditions can be written. Building on existing results for MPCC and recently reported results for the cone of semidefinite matrices and the second-order cone, general definitions are presented, along with new notions of facial points. Finally, the relationship between all of them is studied. On the other hand, using one of Chi Ngoc Do’s results, the relationship between the tangent cone of the complementarity cone with the subdifferential of the second subderivative of the indicator function is studied. Additionally, to the author’s knowledge, the second parabolic subderivative is defined for the first time. Thus, from a new version of Do’s theorem, the relationship between the second order tangent set of the complementarity cone and the subdifferential of the second parabolic subderivative is studied. Finally, a new facial constraint qualification is presented with which primal optimality conditions can be written.
+
+[Download Master's thesis (spanish)](https://repositorio.uchile.cl/bitstream/handle/2250/191684/Condiciones-de-optimalidad-para-la-programacion-conica-con-restricciones-de-complementariedad.pdf?sequence=5)
