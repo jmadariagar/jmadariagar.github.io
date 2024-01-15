@@ -13,6 +13,9 @@ SAS Hall 4125; jimadari [at] ncsu.edu
 * [Analyzing the Adoption of QUIC From a Mobile Development Perspective](https://dl.acm.org/doi/abs/10.1145/3405796.3405830)<br/>Diego Madariaga, Lucas Torrealba, **Javier Madariaga**, Javiera Bermúdez, and Javier Bustos-Jiménez. In Workshop on Evolution, Performance, and Interoperability of QUIC (EPIQ ’20). ACM, 2020.
 
 ## Teaching
+### North Carolina State University, Department of Mathematics
+* Calculus for Life and Management Sciences A (TA) [2024 Spring]
+
 ### University of Chile, Faculty of Physical and Mathematical Sciences
 * Linear Algebra (TA) [2017 Spring]
 * Advanced Calculus (TA) [2018 Spring]
