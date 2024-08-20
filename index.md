@@ -15,7 +15,7 @@ SAS Hall 4125; jimadari [at] ncsu.edu
 * D. Madariaga, L. Torrealba, J. I. Madariaga, J. Bermúdez, and J. Bustos-Jiménez, Analyzing the Adoption of QUIC From a Mobile Development Perspective, [<em>Proceedings of the Workshop on Evolution, Performance, and Interoperability of QUIC (EPIQ '20). ACM</em>](https://conferences.sigcomm.org/sigcomm/2020/workshop-epiq.html), pp 35-41, 2020. [[pdf](https://dl.acm.org/doi/abs/10.1145/3405796.3405830)]
 
 ## Teaching
-### North Carolina State University, Department of Mathematics...
+### North Carolina State University, Department of Mathematics
 * Calculus II (TA) [2024 Fall]
 * Calculus for Life and Management Sciences A (TA) [2024 Spring]
 
