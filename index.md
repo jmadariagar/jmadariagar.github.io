@@ -17,6 +17,7 @@ SAS Hall 4125; jimadari [at] ncsu.edu
 
 ## Teaching
 ### North Carolina State University, Department of Mathematics
+* Calculus II (TA) [2024 Fall]
 * Calculus for Life and Management Sciences A (TA) [2024 Spring]
 
 ### University of Chile, Faculty of Physical and Mathematical Sciences
