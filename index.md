@@ -30,7 +30,5 @@ SAS Hall 4125; jimadari [at] ncsu.edu
 * Modeling and Optimization (TA) [2022 Fall]
 
 ## Theses
-
-### Master in Engineering Sciences, minor Applied Mathematics
-**On Optimality Conditions for Nonlinear Conic Programming with Complementarity Constraints**,<em>Master's Thesis</em>, Universidad de Chile, 2022. [[pdf (in Spanish)](https://repositorio.uchile.cl/bitstream/handle/2250/191684/Condiciones-de-optimalidad-para-la-programacion-conica-con-restricciones-de-complementariedad.pdf?sequence=5)]
+**On Optimality Conditions for Nonlinear Conic Programming with Complementarity Constraints**, <em>Master's Thesis</em>, Universidad de Chile, 2022. [[pdf (in Spanish)](https://repositorio.uchile.cl/bitstream/handle/2250/191684/Condiciones-de-optimalidad-para-la-programacion-conica-con-restricciones-de-complementariedad.pdf?sequence=5)]
 {: style="text-align: justify"}
