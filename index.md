@@ -1,8 +1,6 @@
 ## About
-
 I am currently a Ph.D. student in the [Department of Mathematics](https://math.sciences.ncsu.edu) at NC State University, under the mentorship of Professor [Patrick L. Combettes](https://pcombet.math.ncsu.edu). In 2022, I successfully completed my MSc degree in Mathematics Engineering at the [University of Chile](http://www.dim.uchile.cl), where I received valuable guidance from Professor [Héctor Ramírez C.](https://sites.google.com/site/hectorramirezhomepage/home) Prior to pursuing my graduate studies, I gained practical experience as an Undergraduate Research Assistant at [NIC Chile Research Labs](https://niclabs.cl/), where my work was centered around the implementation of Stochastic and Optimization Models in the context of Internet Quality of Service (QoS) research. My research interests are optimization, nonlinear analysis, convex optimization, and variational analysis.
 {: style="text-align: justify"}
-
 
 ## Contact
 SAS Hall 4125; jimadari [at] ncsu.edu
@@ -16,18 +14,18 @@ SAS Hall 4125; jimadari [at] ncsu.edu
 
 ## Teaching
 ### North Carolina State University, Department of Mathematics
-* Calculus for Life and Management Sciences A (TA) [2024 Spring]
 * Calculus II (TA) [2024 Fall]
+* Calculus for Life and Management Sciences A (TA) [2024 Spring]
 
 ### University of Chile, Faculty of Physical and Mathematical Sciences
-* Linear Algebra (TA) [2017 Spring]
-* Advanced Calculus (TA) [2018 Spring]
-* Measure Theory (TA) [2019 Spring]
-* Mathematical Optimization (TA) [2020 Fall] 
-* Optimal Control: Theory and Laboratory (TA) [2020 Spring; 2021 Spring; 2022 Spring] 
-* Stochastic Models in Engineering Systems (TA) [2020 Spring] 
-* Nonlinear Optimization (TA) [2021 Fall] 
 * Modeling and Optimization (TA) [2022 Fall]
+* Nonlinear Optimization (TA) [2021 Fall] 
+* Stochastic Models in Engineering Systems (TA) [2020 Spring]
+* Optimal Control: Theory and Laboratory (TA) [2020 Spring; 2021 Spring; 2022 Spring]
+* Mathematical Optimization (TA) [2020 Fall]
+* Measure Theory (TA) [2019 Spring]
+* Advanced Calculus (TA) [2018 Spring]
+* Linear Algebra (TA) [2017 Spring]
 
 ## Theses
 * **Condiciones de optimalidad para la programación cónica con restricciones de complementariedad**, <em>Master's Thesis</em>, Universidad de Chile, 2022. [[pdf (in Spanish)](https://repositorio.uchile.cl/bitstream/handle/2250/191684/Condiciones-de-optimalidad-para-la-programacion-conica-con-restricciones-de-complementariedad.pdf?sequence=5)]
