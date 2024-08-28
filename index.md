@@ -8,10 +8,12 @@ SAS Hall 4125; jimadari [at] ncsu.edu
 ## Publications
 ### 2024
 * P. L. Combettes and J. I. Madariaga, Randomly activated proximal methods for nonsmooth convex minimization, [<em>Proceedings of the European Signal Processing Conference</em>](https://eusipcolyon.sciencesconf.org/), to appear. [<a href ="https://javier.madariaga.cl/eusipco2024-2.pdf">pdf</a>]
+
 ### 2021
 * D. Madariaga, L. Torrealba, J. I. Madariaga, J. Bustos-Jiménez, and B. Bustos, PePa Ping Dataset: Comprehensive Contextualization of Periodic Passive Ping in Wireless Networks [<em>ACM Multimedia Systems Conference (MMSys '21)</em>](https://2021.acmmmsys.org/), pp. 274-280, 2021. [[pdf](https://dl.acm.org/doi/abs/10.1145/3458305.3478456)]
 * D. Madariaga, J. I. Madariaga, J. Bustos-Jiménez, and B. Bustos, Improving Signal Strength Aggregation for Mobile Crowdsourcing Scenarios, [<em>MDPI Sensors</em>](https://www.mdpi.com/journal/sensors), vol. 21, p. 1084, 2021. [[pdf](https://www.mdpi.com/1424-8220/21/4/1084/htm)]
 * D. Madariaga, J. I. Madariaga, M. Panza, J. Bustos-Jiménez, and B. Bustos, Detecting Anomalies at a TLD Name Server Based on DNS Traffic Predictions, [<em>IEEE Transactions on Network and Service Management</em>](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=4275028), vol. 18, pp. 1016-1030, 2021. [[pdf](https://doi.org/10.1109/TNSM.2021.3051195)]
+
 ### 2020
 * D. Madariaga, L. Torrealba, J. I. Madariaga, J. Bermúdez, and J. Bustos-Jiménez, Analyzing the Adoption of QUIC From a Mobile Development Perspective, [<em>Proceedings of the Workshop on Evolution, Performance, and Interoperability of QUIC (EPIQ '20). ACM</em>](https://conferences.sigcomm.org/sigcomm/2020/workshop-epiq.html), pp 35-41, 2020. [[pdf](https://dl.acm.org/doi/abs/10.1145/3405796.3405830)]
 
