@@ -1,0 +1,1008 @@
+\documentclass[%handout,
+compress]{beamer}
+\usepackage{times}
+\usepackage{etex}
+\usepackage{ragged2e}  %to justify text
+\usepackage{euscript,amsmath,amssymb,pifont}
+\usepackage{graphicx}
+\usepackage{algorithmic, algorithm}
+\usepackage{leftindex}
+\usepackage{libertine}
+\usepackage[libertine,
+slantedGreek,
+nosymbolsc,
+nonewtxmathopt,
+subscriptcorrection]{newtxmath}
+%-------------------theme---------------------------------------
+\parskip    2pt 
+\tolerance  2500
+\usetheme{Luebeck}
+%\setbeamertemplate{blocks}[rounded][shadow=false]
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{headline}{}
+\useinnertheme{circles}
+\usepackage{fontawesome}
+\usepackage{pifont}
+%-------------------- latexdraw and pstricks figures --------------
+\definecolor{color2b}{rgb}{0.6,0.8,1.0}
+\usepackage{epsfig}
+\usepackage{mathtools}
+\usepackage[usenames,dvipsnames]{pstricks}
+\usepackage{pstricks-add}
+\usepackage{pgfplots,tikz}
+
+\pgfplotsset{compat=1.11} 
+
+\usepackage{pst-grad}
+\usepackage{pst-plot} 
+\usepackage{pst-node} 
+\usepackage{pst-eucl} 
+\usepackage{pst-coil} 
+\usepackage{newcent}
+\usepackage{mathrsfs} 
+
+\definecolor{dblue}{HTML}{0455BF}
+\definecolor{dgreen}{HTML}{02724A}
+\definecolor{dgreen2}{HTML}{025951}
+\definecolor{dred}{HTML}{D90404}
+\definecolor{dviolet}{HTML}{7F00FF}
+\definecolor{labelkey}{HTML}{025951}
+\definecolor{refkey}{HTML}{025951}
+\definecolor{orng}{HTML}{D35400}
+\definecolor{pblue}{rgb}{0.1176,0.5647,1}
+\definecolor{pgreen}{rgb}{0.1961,0.8039,0.1961}
+\definecolor{pred}{rgb}{1.0,0.2706,0.0}
+\definecolor{fred}{rgb}{0.98,0.40,0.93}
+\definecolor{pyellow}{rgb}{1.0,0.6471,0.0}
+%------------------------------------------------
+\definecolor{MaCouleur}{rgb}{0.90,1.0,1.0}
+\definecolor{grayP}{rgb}{0.0,0.2,0.5}
+\definecolor{mgreen}{HTML}{2651A6}
+\definecolor{mblue}{HTML}{2651A6}
+\definecolor{mred}{HTML}{D90404}
+\definecolor{olu}{rgb}{0.5,0.0,0.5}
+\definecolor{bleu}{rgb}{0.0,0.0,0.4}
+\definecolor{bleu1}{rgb}{0.0,1.0,1.0}
+\definecolor{bleu2}{rgb}{0.0,0.85,1.0}
+\definecolor{bleu3}{rgb}{0.0,0.7,1.0}
+\definecolor{bleu4}{rgb}{0.2,0.2,1.0}
+\definecolor{bleu5}{rgb}{0.5,0.0,1.0}
+\definecolor{red2}{rgb}{0.50,0.3,0.0}
+\definecolor{red5}{rgb}{0.40,0.4,1.0}
+\definecolor{red3}{rgb}{0.75,0.0,0.0}
+\definecolor{red4}{rgb}{1.0,1.0,0.92}
+\definecolor{ncstatew}{rgb}{0.2,0.2,0.2}
+\definecolor{lightgreen}{rgb}{0.88,0.0,0.28}
+\newrgbcolor{dgreen}{0.00 0.55 0.00}
+\newrgbcolor{nido}{0.8 0.2 0.8}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% delimiters
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[extdef=true]{delimset}
+\DeclareMathDelimiterSet{\scal}[2]{
+\selectdelim[l]<{#1}
+\mathpunct{}\selectdelim[p]|
+{#2}\selectdelim[r]>}
+\DeclareMathDelimiterSet{\EC}[2]{
+\mathsf{E}\selectdelim[l]({#1}
+\mathpunct{}\selectdelim[p]|
+{#2}\selectdelim[r])}
+\renewcommand{\pair}{\delimpair<{[.],}>}
+\newcommand{\menge}[2]{\bigl\{{#1}\mid{#2}\bigr\}} 
+\DeclareMathDelimiterSet{\Menge}[2]{\selectdelim[l]\{
+{#1}\selectdelim[m]|{#2}\selectdelim[r]\}}
+%blank norm, pairing, and scalar product
+\newcommand*\Cdot{{\mkern 1.6mu\cdot\mkern 1.6mu}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% maths fonts
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\HH}{\mathcal{H}}
+\newcommand{\XX}{\EuScript{X}}
+\newcommand{\GD}{\mathcal{H}}
+\newcommand{\GG}{\mathfrak{H}}
+\newcommand{\AS}{\mathsf{A}}
+\newcommand{\KKS}{\ensuremath{\boldsymbol{\mathsf K}}}
+\newcommand{\HHS}{\ensuremath{\boldsymbol{\mathsf H}}}
+\newcommand{\XXS}{\ensuremath{\boldsymbol{\mathsf X}}}
+\newcommand{\YYS}{\ensuremath{\boldsymbol{\mathsf{Y}}}}
+\newcommand{\GGS}{\ensuremath{{\boldsymbol{\mathsf G}}}}
+\newcommand{\XS}{\mathsf{X}}
+\newcommand{\YS}{\mathsf{Y}}
+\newcommand{\HS}{\mathsf{H}}
+\newcommand{\GS}{\mathsf{G}}
+\newcommand{\ZS}{\mathsf{Z}}
+\newcommand{\nS}{{\mathsf{n}}}
+\newcommand{\nnn}{\mathsf{n}\in\mathbb{N}}
+\newcommand{\iS}{\mathsf{i}}
+\newcommand{\dS}{\mathsf{d}}
+\newcommand{\jS}{\mathsf{j}}
+\newcommand{\kS}{\mathsf{k}}
+\newcommand{\lS}{\mathsf{l}}
+\newcommand{\LS}{\mathsf{L}}
+\newcommand{\LLS}{\boldsymbol{\mathsf{L}}}
+\newcommand{\TS}{\mathsf{T}}
+\newcommand{\BE}{\EuScript{B}}
+\newcommand{\FE}{\EuScript{F}}
+\newcommand{\kut}{\boldsymbol{\EuScript{K}}}
+\newcommand{\sad}{\boldsymbol{\EuScript{S}}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% various sets
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\pinf}{{+}\infty}
+\newcommand{\minf}{{-}\infty}
+\newcommand{\zeroun}{\intv[o]{0}{1}}
+\newcommand{\rzeroun}{\intv[l]{0}{1}}
+\newcommand{\lzeroun}{\intv[r]{0}{1}}
+\newcommand{\RXX}{\intv{\minf}{\pinf}}
+\newcommand{\RX}{\intv[l]0{\minf}{\pinf}}
+\newcommand{\RP}{\intv[r]0{0}{\pinf}}
+\newcommand{\RPP}{\intv[o]0{0}{\pinf}}
+\newcommand{\RPX}{\intv0{0}{\pinf}}
+\newcommand{\RPPX}{\intv[l]0{0}{\pinf}}
+\newcommand{\RM}{\intv[l]0{\minf}{0}}
+\newcommand{\RMM}{\intv[o]0{\minf}{0}}
+\newcommand{\RMX}{\intv0{\minf}{0}}
+\newcommand{\emp}{\varnothing}
+\newcommand{\forallmu}{\forall^{\mu}}
+\newcommand{\WC}{\ensuremath{{\mathfrak W}}}
+\newcommand{\SC}{\ensuremath{{\mathfrak S}}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% operators
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\Sum}{\displaystyle\sum}
+\newcommand{\Int}{\displaystyle\int}
+\newcommand{\Frac}[2]{\displaystyle{\dfrac{#1}{#2}}} 
+\newcommand{\minimize}[2]{\underset{\substack{{#1}}}
+{\operatorname{minimize}}\;\;#2}
+\newcommand{\infconv}{\mathbin{\mbox{\small$\square$}}}
+\newcommand{\einfconv}{\mathbin{\mbox{\footnotesize$\boxdot$}}}
+\newcommand{\pushfwd}%
+{\ensuremath{\mbox{\Large$\,\triangleright\,$}}}
+\DeclareMathOperator*{\Argmind}{Argmin}
+\DeclareMathOperator{\Argmin}{Argmin}
+\DeclareMathOperator{\argmin}{argmin}
+\newcommand{\Id}{\mathsf{Id}}
+\newcommand{\ID}{\boldsymbol{\mathsf{Id}}}
+\newcommand{\moyo}[2]{\leftindex[I]^{#2}{#1}}
+\DeclareMathOperator{\card}{card}
+%\DeclareMathOperator{\conv}{conv}
+%\DeclareMathOperator{\cconv}{\overline{conv}}
+%\DeclareMathOperator{\qq}{\ensuremath{\mathscr{Q}}}
+\DeclareMathOperator{\cran}{\overline{ran}}
+\DeclareMathOperator{\ran}{ran}
+\DeclareMathOperator{\cdom}{\overline{dom}}
+\DeclareMathOperator{\dom}{dom}
+\DeclareMathOperator{\intdom}{int\,dom}
+\DeclareMathOperator{\epi}{epi}
+\DeclareMathOperator{\essinf}{ess\,inf}
+\DeclareMathOperator{\esssup}{ess\,sup}
+%\DeclareMathOperator{\cepi}{\overline{epi}}
+\DeclareMathOperator{\Fix}{Fix}
+\DeclareMathOperator{\gra}{gra}
+\DeclareMathOperator{\zer}{zer}
+\DeclareMathOperator{\inte}{int}
+%\DeclareMathOperator{\reli}{ri}
+\DeclareMathOperator{\sri}{sri}
+\DeclareMathOperator{\reli}{ri}
+\DeclareMathOperator{\sign}{sign}
+\DeclareMathOperator{\rec}{rec}
+\DeclareMathOperator{\prox}{prox}
+\DeclareMathOperator{\proj}{proj}
+\DeclareMathOperator{\spc}{\overline{span}}
+\newcommand{\EE}{\mathsf{E}}
+\newcommand{\PP}{\mathsf{P}}
+\DeclareMathOperator{\PE}{\overset{\diamond}{\mathsf{E}}}
+\newcommand{\proxc}[2]{{#1}\diamond{#2}}
+\DeclareMathOperator{\dft}{DFT}
+\DeclareMathOperator{\idft}{IDFT}
+%-------------------MATH MISC-----------------------------------
+\renewcommand{\le}{\leqslant}
+\renewcommand{\ge}{\geqslant}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+\newcommand{\exi}{\exists\,}
+\newcommand{\weakly}{\rightharpoonup}
+\newcommand{\mae}{\text{\normalfont$\mu$-a.e.}}
+\newcommand{\Pas}{\text{\normalfont$\PP$-a.s.}}
+%------------------------------------------------------------------
+\usetikzlibrary{decorations}
+\usetikzlibrary{backgrounds,arrows,positioning,decorations.%
+markings}
+\usetikzlibrary{shapes,snakes}
+\tikzstyle{every picture}+=[remember picture]
+%\everymath{\displaystyle}
+%% - Tikz box --------------------
+\tikzstyle{mybox} = [draw=lightgreen, fill=white, very thick,
+rectangle, rounded corners, inner sep=5pt, inner ysep=5pt]
+\tikzstyle{fancytitle} =[fill=lightgreen!30, text=black, ellipse]
+%-------------------general setting-----------------------------
+\renewcommand\mathfamilydefault{\rmdefault}
+\setbeamercolor*{structure}{bg=white,fg=mblue}
+\setbeamercolor*{palette primary}{use=structure,fg=white,bg=red3} 
+\setbeamercolor*{palette secondary}{use=structure,fg=mblue,%
+bg=white} 
+\setbeamercolor*{palette tertiary}{use=structure,fg=white,%
+bg=mblue} 
+\setbeamercolor*{palette quaternary}{fg=white,bg=black}
+\setbeamercolor{section in toc}{fg=black,bg=white}
+\setbeamerfont{title}{family=\sffamily,size=\Large}
+%-------------------alert blocks--------------------------------
+\AtBeginEnvironment{alertblock}{%
+\setbeamercolor{itemize item}{fg=mred}
+%\setbeamertemplate{itemize items}{\faCheckCircle}
+\setbeamertemplate{itemize items}{\ding{226}}
+\setbeamerfont{block title alerted}{family=\normalfont}
+\setbeamercolor{footnote}{fg=mred}
+\setbeamercolor{footnote mark}{fg=mred}
+\setbeamercolor{local structure}{fg=mred}
+}
+\setbeamercolor{block title alerted}{bg=mred,fg=white}
+%-----------------proposition blocks------------------------------
+\setbeamercolor{block title proposition}{bg=red3,fg=white}
+\AtBeginEnvironment{propositionblock}{%
+\setbeamercolor{itemize item}{fg=mgreen}
+%\setbeamertemplate{itemize items}{\faCheckCircle}
+\setbeamertemplate{itemize items}{\color{red3}\ding{226}}
+\setbeamerfont{block title proposition}{family=\normalfont}
+\setbeamercolor{footnote}{fg=mgreen}
+\setbeamercolor{footnote mark}{fg=mgreen}
+\setbeamercolor{local structure}{fg=mgreen}
+}
+% ------------------assumption blocks------------------------------
+\setbeamercolor{block title assumption}{bg=red2,fg=white}
+\AtBeginEnvironment{assumptionblock}{%
+\setbeamercolor{itemize item}{fg=mgreen}
+%\setbeamertemplate{itemize items}{\faCheckCircle}
+\setbeamertemplate{itemize items}{\color{black}\ding{226}}
+\setbeamerfont{block title assumption}{family=\normalfont}
+\setbeamercolor{footnote}{fg=mgreen}
+\setbeamercolor{footnote mark}{fg=mgreen}
+\setbeamercolor{local structure}{fg=mgreen}
+}
+% ------------------example blocks------------------------------
+\setbeamercolor{block title example}{bg=red2,fg=white}
+\AtBeginEnvironment{block}{%
+\setbeamercolor{itemize item}{fg=mgreen}
+%\setbeamertemplate{itemize items}{\faCheckCircle}
+\setbeamertemplate{itemize items}{\color{black}\ding{226}}
+\setbeamerfont{block title example}{family=\normalfont}
+\setbeamercolor{footnote}{fg=mgreen}
+\setbeamercolor{footnote mark}{fg=mgreen}
+\setbeamercolor{local structure}{fg=mgreen}
+}
+%-------------------usual blocks--------------------------------
+\setbeamercolor{block title}{bg=red2,fg=white}
+\setbeamerfont{block title}{family=\normalfont}
+\setbeamercolor{block body}{fg=black,bg=red4}%
+\setbeamercolor{block body alerted}{fg=black,bg=red4}%
+\setbeamercolor{block body example}{fg=black,bg=red4}%
+\setbeamercolor{block body proposition}{fg=black,bg=red4}%
+\setbeamercolor{block body assumption}{fg=black,bg=red4}%
+\setbeamercolor{frametitle}{bg=gray!16!white,fg=mblue}
+\setbeamercolor*{titlelike}{parent=palette primary}
+%-------------------
+\setbeamercolor{frametitle}{fg=white,bg=red3}
+%\setbeamercolor{structure}{fg=black,bg=white}
+%\setbeamercolor{title}{bg=red3}
+%\setbeamercolor{title}{fg=white}
+%\setbeamercolor{block title}{bg=red3,fg=white}
+%\setbeamercolor{block body}{bg=violet!15,fg=black}
+%\beamertemplatesolidbackgroundcolor{MaCouleur}
+%Vertical shading of the slides:
+\setbeamercolor{normal text}{bg=}
+\setbeamertemplate{background canvas}[vertical shading]%
+[top=white!15,bottom=red3!01]
+\beamertemplatenavigationsymbolsempty
+
+%-----------------------------------------------------------
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{assumption}[theorem]{Assumption}
+%-----------------------------------------------------------
+%\AtBeginSection{\frame{\tableofcontents[current]}}
+%\setbeamercovered{transparent} %grise textes non encore affiches 
+%------------------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% authors' colors
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\tdred}[1]{{\color{dred}#1}}
+\newcommand{\tpred}[1]{{\color{pred}#1}}
+\newcommand{\tdblue}[1]{{\color{dblue}#1}}
+\newcommand{\tpblue}[1]{{\color{pblue}#1}}
+\newcommand{\tdgreen}[1]{{\color{dgreen}#1}}
+\newcommand{\tpgreen}[1]{{\color{pgreen}#1}}
+\newcommand{\tdviolet}[1]{{\color{dviolet}#1}}
+\newcommand{\torng}[1]{{\color{orng}#1}}
+\newcommand{\tpyell}[1]{{\color{pyellow}#1}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% operators with colors
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\LR}{\djr{L}}
+\newcommand{\LRk}{\djr{L_k}}
+\newcommand{\BB}{\djb{B}}
+\newcommand{\BBk}{\djb{B_k}}
+\newcommand{\gb}{\djb{g}}
+\newcommand{\gbk}{\djb{g_k}}
+
+\setbeamertemplate{caption}[numbered]
+
+
+\title[Random proximal methods%
+\hspace{2em}\insertframenumber/\inserttotalframenumber]%
+{Randomly activated proximal methods for nonsmooth convex 
+minimization}
+\author[Javier I. Madariaga]
+{Patrick L. Combettes \& {\underline{Javier I. Madariaga}}\\
+{\footnotesize }} 
+
+\institute{ 
+Department of Mathematics\\
+North Carolina State University\\
+Raleigh, NC 27695, USA\\[-1mm]
+}
+
+\date{\scriptsize{
+\textbf{TAGMaC Fall 2024}\\
+November 02, 2024}}
+
+\subject{
+TAGMaC Fall 2024
+}
+%\vspace{2mm}}
+\begin{document}
+\small
+
+\begin{frame}
+\titlepage
+\centering{
+\includegraphics[height=0.6cm]{ncsu.eps}}
+\end{frame}
+
+\begin{frame}{Background and motivation}
+\begin{itemize}
+\item\justifying
+Throughout, $\tpblue{\HS},\tpblue{\GS_{1}},\ldots,
+\tpblue{\GS_{\mathsf{p}}}$ are separable real Hilbert spaces. 
+\item\pause
+$\upGamma_0(\tpblue{\HS})$ denotes the class 
+of lower semicontinuous convex functions 
+$\tdgreen{\mathsf{f}}\colon\tpblue{\HS}\to\RX$ such that
+\begin{equation}
+\nonumber 
+\dom\tdgreen{\mathsf{f}}=\menge{\mathsf{x}\in\tpblue{\HS}}
+{\tdgreen{\mathsf{f}}(\mathsf{x})<\pinf}
+\neq\emp.
+\end{equation}
+\item\pause
+Let $\tdgreen{\mathsf{f}}\in\upGamma_0(\tpblue{\HS})$. The 
+subdifferential of $\tdgreen{\mathsf{f}}$ is the operator
+\begin{equation}
+\nonumber
+\tdgreen{\partial\mathsf{f}}\colon\tpblue{\HS}\to 2^{\tpblue{\HS}}
+\colon\mathsf{x}\mapsto
+\menge{\mathsf{x}^*\in\tpblue{\HS}}
+{(\forall\mathsf{z}\in\tpblue{\HS})\;
+\scal{\mathsf{z}-\mathsf{x}}{\mathsf{x}^*}+\tdgreen{\mathsf{f}}
+(\mathsf{x})
+\leq\tdgreen{\mathsf{f}}(\mathsf{z})} 
+\end{equation}
+and the proximity operator of $\tdgreen{\mathsf{f}}$ is 
+\begin{equation}
+\nonumber
+\tdgreen{\prox_{\mathsf{f}}}\colon\tpblue{\HS}\to\tpblue{\HS}
+\colon\mathsf{x}\mapsto\underset{\mathsf{z}\in\tpblue{\HS}}
+{\text{argmin}}\;\biggl(\tdgreen{\mathsf{f}}(\mathsf{z})+
+\dfrac{1}{2}\|\mathsf{x}-\mathsf{z}\|^2\biggr).
+\end{equation}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Background and motivation}
+\begin{itemize}
+\justifying
+\item
+Let $\tpblue{\mathsf{C}}$ be a nonempty closed convex subset of 
+$\tpblue{\HS}$. Then $\tdgreen{\iota_{\mathsf{C}}}$ denotes the 
+indicator function of $\tpblue{\mathsf{C}}$ and
+$\tdgreen{\proj_{\mathsf{C}}}
+=\tdgreen{\prox_{\iota_{\mathsf{C}}}}$
+the projection operator onto $\tpblue{\mathsf{C}}$.
+\item\pause
+The underlying probability space is $(\upOmega,\FE,\PP)$.% and 
+$\tpblue{\BE_{\HS}}$ denotes the Borel $\upsigma$-algebra of
+$\tpblue{\HS}$.
+An $\tpblue{\HS}$-valued random variable is a measurable 
+mapping 
+$x\colon(\upOmega,\FE)\to(\tpblue{\HS},\tpblue{\BE_{\HS}})$. 
+%The $\upsigma$-algebra generated by a family $\upPhi$ of 
+%random variables is denoted by $\upsigma(\upPhi)$
+\item\pause
+We use sans-serif letters to denote deterministic variables and
+italicized serif letters to denote random variables. 
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Background and motivation}
+\begin{exampleblock}{Problem~1}
+\justifying
+$\tpblue{\HS}$ is a separable real Hilbert space and 
+$\tdgreen{\mathsf{f}}\in\upGamma_0(\tpblue{\HS})$. For every
+$\kS\in\{1,\ldots,\mathsf{p}\}$, $\tpblue{\GS_{\kS}}$ is a 
+separable real Hilbert space, 
+$\tdgreen{\mathsf{g}_{\kS}}\in\upGamma_0(\tpblue{\GS_{\kS}})$, and
+$0\neq\tdred{\LS_{\kS}}\colon\tpblue{\HS}\to\tpblue{\GS_{\kS}}$ is 
+linear and bounded. It is assumed that
+\begin{equation}
+\nonumber 
+\zer\brk3{\tdgreen{\partial\mathsf{f}}+\sum_{\kS=1}^\mathsf{p}
+\tdred{\LS^*_{\kS}}\circ\tdgreen{\partial\mathsf{g}_{\kS}}\circ
+\tdred{\LS_{\kS}}}\neq\emp.
+\end{equation}
+The task is to
+\begin{equation}
+\nonumber
+\minimize{\mathsf{x}\in\tpblue{\HS}}{\tdgreen{\mathsf{f}}
+(\mathsf{x})+\sum_{\kS=1}^\mathsf{p}\tdgreen{\mathsf{g}_{\kS}}
+(\tdred{\LS_{\kS}}\mathsf{x})}
+\end{equation}
+and the set of solutions is denoted by $\ZS$.
+\end{exampleblock}
+\justifying\pause
+It covers a wide range of minimization models in data analysis and
+it is an essential tool in signal processing, statistics, inverse
+problems, and machine learning.
+\end{frame}
+
+\begin{frame}
+\frametitle{Background and motivation}
+\justifying
+We aim at designing {\bf proximal algorithms} which are 
+{\bf stochastic} in the sense that they activate a randomly 
+selected block of functions at each iteration\pause
+\vspace{5mm}
+
+Furthermore, they should satisfy: 
+\begin{itemize}
+\justifying 
+\item[\bfseries R1:]
+They {\bf guarantee the convergence} of the sequence of iterates to
+a solution to Problem~1 without any additional
+assumptions.
+\item[\bfseries R2:] \pause
+At each iteration, more than one
+randomly selected function 
+$(\tpblue{\mathsf{f}},\tpblue{\mathsf{g}_1},\ldots,
+\tpblue{\mathsf{g}_{\mathsf{p}}})$ can be
+activated. 
+\item[\bfseries R3:] \pause
+Knowledge of bounds on the norms of the linear operators
+$(\tdred{\LS_{\kS}})_{1\leq\kS\leq\mathsf{p}}$ is not
+required. 
+\end{itemize} 
+\end{frame}
+
+\begin{frame}
+\frametitle{Background and motivation}
+\justifying
+There does not seem to exist methods that satisfy simultaneously
+\tdblue{\bfseries R1--R3}. 
+\vspace{5mm}\pause
+
+Our main contribution is to proposed 
+three algorithmic frameworks that comply with 
+\tdblue{\bfseries R1--R3}.
+\vspace{5mm}\pause
+
+The strategy consists in embedding Problem~1 into a
+{\bf multivariate problem}.
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%% GENERAL FRAMEWORK %%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{General Framework}
+\begin{block}{Problem~2}
+\label{prob:2}
+\begin{itemize}
+\justifying
+\item
+Let $(\tpblue{\XS_{\iS}})_{1\leq\iS\leq\mathsf{m}}$ and
+$(\tpblue{\YS_{\jS}})_{1\leq\jS\leq\mathsf{r}}$ be families of 
+separable real Hilbert spaces with direct Hilbert sums 
+$\tpblue{\XXS}
+=\tpblue{\XS_1}\oplus\cdots\oplus\tpblue{\XS_{\mathsf{m}}}$ and
+$\tpblue{\YYS}
+=\tpblue{\YS_1}\oplus\cdots\oplus\tpblue{\YS_{\mathsf{r}}}$. 
+\pause
+\item
+For every $\iS\in\{1,\ldots,\mathsf{m}\}$, let 
+$\tdgreen{\mathsf{f}_{\iS}}\in\Gamma_0(\tpblue{\XS_{\iS}})$
+and, for every $\jS\in\{1,\ldots,\mathsf{r}\}$, let 
+$\tdgreen{\mathsf{h}_{\jS}}\in\Gamma_0(\tpblue{\YS_{\jS}})$, 
+and let $\tdred{\mathsf{M}_{\jS\iS}}\colon\tpblue{\XS_{\iS}}
+\to\tpblue{\YS_{\jS}}$ 
+be linear and bounded. 
+%\pause
+%\item
+%It is assumed that there exists 
+%$\boldsymbol{\mathsf{u}}\in\tpblue{\XXS}$ such that
+%$(\forall\iS\in\{1,\ldots,\mathsf{m}\})\;\mathsf{0}\in
+%\tdgreen{\partial\mathsf{f}_{\iS}}(\mathsf{u}_{\iS})
+%+\sum_{\kS=1}^{\mathsf{r}}
+%\tdred{\mathsf{M}_{\kS\iS}^*}\bigl(
+%\tdgreen{\partial\mathsf{h}_{\kS}}\bigl(\sum_{\jS=1}^{\mathsf{m}}
+%\tdred{\mathsf{M}_{\kS\jS}}\mathsf{u}_{\jS}\bigr)\bigr)$.\pause 
+\end{itemize}
+\pause
+The task is to 
+\begin{equation}
+\nonumber
+\minimize{\boldsymbol{\mathsf{x}}\in\tpblue{\XXS}}
+{\sum_{\iS=1}^\mathsf{m}\tdgreen{\mathsf{f}_{\iS}}
+(\mathsf{x}_{\iS})+\sum_{\jS=1}^\mathsf{r}
+\tdgreen{\mathsf{h}_{\jS}}
+\biggl(\sum_{\iS=1}^\mathsf{m}
+\tdred{\mathsf{M}_{\jS\iS}}\mathsf{x}_{\iS}\biggr)}.
+\end{equation}
+\end{block}
+\end{frame}
+
+\begin{frame}{General Framework}
+The set of solutions to Problem~2 is denoted by
+$\boldsymbol{\mathsf{Z}}$. \pause
+Further, the projection operator onto the subspace 
+\begin{equation}
+\nonumber
+\boldsymbol{\mathsf{V}}=
+\Menge3{(\boldsymbol{\mathsf{x}},\boldsymbol{\mathsf{y}})
+\in\tpblue{\XXS}\oplus\tpblue{\YYS}}
+{(\forall\jS\in\{1,\ldots,\mathsf{r}\})\;\mathsf{y}_{\jS}=
+\sum_{\iS=1}^\mathsf{m}\tdred{\mathsf{M}_{\jS\iS}}\mathsf{x}_{\iS}}
+\end{equation}
+is decomposed as $\proj_{\boldsymbol{\mathsf{\mathsf{V}}}}
+\colon(\boldsymbol{\mathsf{x}},\boldsymbol{\mathsf{y}})\mapsto
+(\tdred{\mathsf{Q}_{\mathsf{l}}}
+(\boldsymbol{\mathsf{x}},\boldsymbol{\mathsf{y}}))_{1\leq
+\mathsf{l}\leq\mathsf{m}+\mathsf{r}}$, 
+where for every $\iS\in\{1,\ldots,\mathsf{m}\}$, 
+$\tdred{\mathsf{Q}_{\iS}}\colon\tpblue{\XXS}\oplus\tpblue{\YYS}
+\to\tpblue{\XS_{\iS}}$ and,
+for every $\jS\in\{1,\ldots,\mathsf{r}\}$, 
+$\tdred{\mathsf{Q}_{\mathsf{m}+\jS}}
+\colon\tpblue{\XXS}\oplus\tpblue{\YYS}\to\tpblue{\YS_{\jS}}$.
+\end{frame}
+
+\begin{frame}{General Framework}
+\begin{block}{Theorem~3...}
+Douglas–Rachford method yields the following result.
+\begin{itemize}
+\item \pause
+Let $\upgamma\in\RPP$, 
+\item \pause
+let $(\uplambda_{\nS})_{\nnn}$ be a sequence in $\left]0,2\right[$ 
+such that $\inf_{\nnn}\uplambda_{\nS}>0$ and 
+$\sup_{\nnn}\uplambda_{\nS}<2$,
+\pause
+\item 
+let $\boldsymbol{x}_0$ and $\boldsymbol{z}_0$
+be $\tpblue{\XXS}$-valued random variables,\pause
+\item
+let $\boldsymbol{y}_0$ and $\boldsymbol{w}_0$
+be $\tpblue{\YYS}$-valued random variables, \pause 
+\item 
+set $\mathsf{D}=\{0,1\}^{\mathsf{m}+\mathsf{r}}\smallsetminus
+\{\boldsymbol{\mathsf{0}}\}$, and let 
+$(\boldsymbol{\varepsilon}_{\nS})_{\nnn}$ be 
+identically distributed $\mathsf{D}$-valued random variables. 
+\red{(**)}
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}{General Framework}
+\begin{block}{...Theorem~3}
+Iterate
+\begin{flalign*}
+&\begin{array}{l}
+\text{for}\;\nS=0,1,\ldots\\
+\left\lfloor
+\begin{array}{l}
+\text{for}\;\iS=1,\ldots,\mathsf{m}\\
+\left\lfloor
+\begin{array}{l}
+x_{\iS,\nS+1}=x_{\iS,\nS}+\varepsilon_{\iS,\nS}
+\bigl(\tdred{\mathsf{Q}_{\iS}}
+(\boldsymbol{z}_{\nS},\boldsymbol{w}_{\nS})
+-x_{\iS,\nS}\bigr)\\[1mm]
+z_{\iS,\nS+1}=z_{\iS,\nS}+\varepsilon_{\iS,\nS}\uplambda_{\nS}
+\bigl(\tdgreen{\prox_{\upgamma\mathsf{f}_{\iS}}}
+(2x_{\iS,\nS+1}-z_{\iS,\nS})-x_{\iS,\nS+1}\bigr)
+\end{array}
+\right.\\
+\text{for}\;\jS=1,\ldots,\mathsf{r}\\
+\left\lfloor
+\begin{array}{l}
+y_{\jS,\nS+1}=y_{\jS,\nS}+\varepsilon_{\mathsf{m}+\jS,\nS}
+\big(\tdred{\mathsf{Q}_{\mathsf{m}+\jS}}
+(\boldsymbol{z}_{\nS},\boldsymbol{w}_{\nS})
+-y_{\jS,\nS}\big)\\[1mm]
+w_{\jS,\nS+1}=w_{\jS,\nS}\,+\varepsilon_{\mathsf{m}+\jS,\nS}
+\uplambda_{\nS}
+\bigl(\tdgreen{\prox_{\upgamma\mathsf{h}_{\jS}}}
+(2y_{\jS,\nS+1}-w_{\jS,\nS})-y_{\jS,\nS+1}\bigr).
+\end{array}
+\right.
+\end{array}
+\right.\\
+\end{array}
+\nonumber
+\end{flalign*}
+\pause
+Then $(\boldsymbol{x}_{\nS})_{\nnn}$ converges weakly $\Pas$ to a
+$\boldsymbol{\mathsf{Z}}$-valued random variable.
+\end{block}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%% FRAMEWORK 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Framework~1}
+How can we use this general framework to solve Problem~1?\pause
+\begin{equation}
+\tag{GF}
+\minimize{\boldsymbol{\mathsf{x}}\in\tpblue{\XXS}}
+{\sum_{\iS=1}^\mathsf{m}\tdgreen{\mathsf{f}_{\iS}}
+(\mathsf{x}_{\iS})+
+\sum_{\jS=1}^\mathsf{r}\tdgreen{\mathsf{h}_{\jS}}
+\biggl(\sum_{\iS=1}^\mathsf{m}
+\tdred{\mathsf{M}_{\jS\iS}}\mathsf{x}_{\iS}\biggr)}.
+\end{equation}
+\begin{equation}
+\tag{P1}
+\minimize{\mathsf{x}\in\tpblue{\HS}}{\tdgreen{\mathsf{f}}
+(\mathsf{x})+
+\sum_{\kS=1}^\mathsf{p}\tdgreen{\mathsf{g}_{\kS}}
+(\tdred{\mathsf{L}_{\kS}}\mathsf{x})}.
+\end{equation}\pause
+The same for $\mathsf{m} = 1$, 
+$\mathsf{r} = \mathsf{p}$, 
+$\tpblue{\XS_1}=\tpblue{\HS}$, $\tdgreen{\mathsf{f}_1}
+=\tdgreen{\mathsf{f}}$, and 
+$(\forall \kS\in\{1,\dots,\mathsf{p}\})$ $\tpblue{\YS_{\kS}} 
+=\tpblue{\GS_{\kS}}$, 
+$\tdred{\mathsf{M}_{\kS,1}}=\tdred{\mathsf{L}_{\kS}}$, and 
+$\tdgreen{\mathsf{h}_{\kS}}=\tdgreen{\mathsf{g}_{\kS}}$.
+\end{frame}
+
+\begin{frame}{Framework~1}
+\begin{block}{Proposition~4}
+\label{p:3}
+Set $\mathsf{D}=\{0,1\}^{1+\mathsf{p}}\smallsetminus
+\{\boldsymbol{\mathsf{0}}\}$ and consider Theorem~3 with\pause
+\begin{equation}
+\nonumber
+\begin{array}{l}
+\text{for}\;\nS=0,1,\ldots\\
+\left\lfloor
+\begin{array}{l}
+\tdviolet{q_{\mathsf{n}}}
+=(\Id+\sum_{\kS=1}^{\mathsf{p}}\tdred{\LS_{\kS}^*}\circ
+\tdred{\LS_{\kS}})^{-1}
+\bigl(z_{\nS}+\sum_{\kS=1}^{\mathsf{p}}
+\tdred{\LS_{\kS}^*}w_{\kS,\nS}\bigr)\\
+\tdred{\mathsf{Q}_{1}}(\boldsymbol{z}_{\nS},\boldsymbol{w}_{\nS})
+=\tdviolet{q_{\nS}}\\\pause
+\text{for}\;\kS=1,\dots,\mathsf{p}\\
+\left\lfloor
+\begin{array}{l}
+\tdred{\mathsf{Q}_{1+\kS}}
+(\boldsymbol{z}_{\nS},\boldsymbol{w}_{\nS})
+=\tdred{\LS_{\kS}}\tdviolet{q_{\nS}}.
+\end{array}
+\right.\\
+\end{array}
+\right.\\
+\end{array}
+\end{equation}
+Then $(x_{\nS})_{\nnn}$ converges weakly $\Pas$ to a
+$\ZS$-valued random variable. 
+\end{block}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%% FRAMEWORK 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Framework 2}
+Can we use (GF) to solve the original problem differently?
+\pause
+Set $\tpblue{\GGS}=\tpblue{\GS_1}\oplus\cdots\oplus
+\tpblue{\GS_{\mathsf{p}}}$ and
+\begin{equation}
+\nonumber
+\boldsymbol{\mathsf{W}}=
+\Menge3{\boldsymbol{\mathsf{x}}\in\tpblue{\HS}\oplus\tpblue{\GGS}}
+{(\forall\kS\in\{1,\ldots,\mathsf{p}\})\;\mathsf{x}_{\kS+1}=
+\tdred{\mathsf{L}_{\kS}}\mathsf{x}_{1}}.
+\end{equation}\pause
+\begin{block}{Problem~5}
+Set $\tdgreen{\mathsf{f}_{1}}=\tdgreen{\mathsf{f}}$ and, for every 
+$\iS\in\{2,\ldots,\mathsf{p}+1\}$,
+$\tdgreen{\mathsf{f}_{\iS}}=\tdgreen{\mathsf{g}_{\iS-1}}$. Denote 
+by $\boldsymbol{\mathsf{x}}=(\mathsf{x}_{1},\dots,
+\mathsf{x}_{\mathsf{p}+1})$ a generic element 
+in $\tpblue{\HS}\oplus\tpblue{\GGS}$. The task is to
+\begin{equation}
+\nonumber
+\minimize{
+\boldsymbol{\mathsf{x}}\in\tpblue{\HS}\oplus\tpblue{\GGS}}
+{\sum_{\mathsf{i}=1}^{\mathsf{p}+1} 
+\tdgreen{\mathsf{f}_{\mathsf{i}}}
+(\mathsf{x}_{\mathsf{i}})\pause+
+\tpyell{\iota_{\boldsymbol{\mathsf{W}}}}(\boldsymbol{\mathsf{x}})}.
+\end{equation} 
+\end{block}
+\end{frame}
+
+\begin{frame}{Framework 2}
+\begin{exampleblock}{Proposition~6}
+\label{p:1}
+Set $\mathsf{D}=\{0,1\}^{\mathsf{p}+2}\smallsetminus
+\{\boldsymbol{\mathsf{0}}\}$ and consider Theorem~3 with\pause
+\begin{flalign*}
+&\begin{array}{l}
+\text{for}\;\nS=0,1,\ldots\\
+\left\lfloor
+\begin{array}{l}
+\text{for}\;\iS=1,\ldots,\mathsf{p}+1\\
+\left\lfloor
+\begin{array}{l}
+\tdred{\mathsf{Q}_{\iS}}
+(\boldsymbol{z}_{\nS},\boldsymbol{w}_{\nS})
+= \frac{1}{2}(z_{\iS,\nS}+w_{\iS,\nS})
+\end{array}
+\right.\\[0.7mm]
+\only<3->{\tdred{\mathsf{Q}_{\mathsf{p}+2}}
+(\boldsymbol{z}_{\nS},\boldsymbol{w}_{\nS}) 
+=\frac{1}{2}(\boldsymbol{z}_{\nS}+\boldsymbol{w}_{\nS})}\\[0.7mm]
+\only<1,2>{\phantom{\tdviolet{q_{\mathsf{n}}}
+=(\Id+\sum_{\kS=1}^{\mathsf{p}}\tdred{\LS_{\kS}^*}\circ
+\tdred{\LS_{\kS}})^{-1}
+\bigl(2y_{1,\nS+1}-w_{1,\nS}
++\sum_{\kS=1}^{\mathsf{p}}\tdred{\LS_{\kS}^*}
+(2y_{\kS+1,\nS+1}-w_{\kS+1,\nS})\bigr)}}
+\only<3->{\tdviolet{q_{\mathsf{n}}}
+=(\Id+\sum_{\kS=1}^{\mathsf{p}}\tdred{\LS_{\kS}^*}\circ
+\tdred{\LS_{\kS}})^{-1}
+\bigl(2y_{1,\nS+1}-w_{1,\nS}
++\sum_{\kS=1}^{\mathsf{p}}\tdred{\LS_{\kS}^*}
+(2y_{\kS+1,\nS+1}-w_{\kS+1,\nS})\bigr)}\\[0.7mm]
+\only<3->{\tpyell{\prox_{\iota_{\boldsymbol{\mathsf{W}}}}}
+(2y_{\kS,\nS+1}-w_{\kS,\nS}) 
+= (\tdviolet{q_{\nS}},\tdred{\LS_{1}}\tdviolet{q_{\nS}},\dots,
+\tdred{\LS_{\mathsf{p}}}\tdviolet{q_{\nS}})}
+\end{array}
+\right.\\
+\end{array}
+\nonumber
+\end{flalign*}
+\pause\pause
+Then $({x}_{1,\nS})_{\nnn}$ converges weakly $\Pas$ to a 
+$\ZS$-valued random variable. 
+\end{exampleblock}
+\end{frame}
+
+\section{F3}
+\begin{frame}{Framework~3}
+We extend the same idea...
+\begin{block}{Problem~7}
+\label{prob:6}
+Consider the problem
+\begin{equation}
+\nonumber
+\minimize{\boldsymbol{\mathsf{x}}\in\tpblue{\HS}\oplus
+\tpblue{\boldsymbol{\mathsf{G}}}}
+{\sum_{\mathsf{i}=1}^{\mathsf{p}+1}
+\tdgreen{\mathsf{f}_{\mathsf{i}}}(\mathsf{x}_{\mathsf{i}})
+\pause
++\sum_{\mathsf{k}=1}^{\mathsf{p}}\tpyell{\iota_{\{\mathsf{0}\}}}
+\Biggl(\sum_{\iS=1}^{\mathsf{p}+1}\tpyell{\mathsf{C}_{\kS\iS}}
+{\mathsf{x}_{\iS}}\Biggr)},
+\end{equation}
+where
+\begin{equation}
+\nonumber
+\tpyell{\mathsf{C}_{\kS\iS}}=
+\begin{cases}
+\phantom{-}\tdred{\mathsf{L}_{\kS}}, & \text{if}\;\iS=1;\\
+-\Id,&\text{if}\;\iS=\kS+1;\\
+\phantom{-}\mathsf{0},& \text{otherwise.}
+\end{cases}
+\end{equation}
+\end{block}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%% FRAMEWORK 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Framework~3}
+\begin{exampleblock}{Proposition~8}
+\label{p:11}
+Set $\mathsf{D}=\{0,1\}^{2\mathsf{p}+1}\smallsetminus
+\{\boldsymbol{\mathsf{0}}\}$ and consider Theorem~3 with\pause
+\begin{flalign*}
+&\begin{array}{l}
+\text{for}\;\nS=0,1,\ldots\\
+\left\lfloor
+\begin{array}{l}
+\tdviolet{{q}_{\nS}}=(2\Id+\sum_{\kS=1}^{\mathsf{p}}
+\tdred{\LS_{\kS}^*}\circ\tdred{\LS_{\kS}})^{-1}
+\bigl(2\mathsf{z}_{1,\nS}+
+\sum_{\kS=1}^{\mathsf{p}}\tdred{\LS_{\kS}^*}(\mathsf{z}_{\kS+1,\nS}
++\mathsf{w}_{\kS,\nS})\bigr)\\
+\tdred{\mathsf{Q}_1}(\boldsymbol{z}_{\nS},\boldsymbol{w}_{\nS})
+=\tdviolet{q_{\nS}}\\
+\begin{array}{l}
+\text{for}\;\iS=1,\ldots,\mathsf{p}\\
+\left\lfloor
+\begin{array}{l}
+\tdred{\mathsf{Q}_{1+\iS}}
+(\boldsymbol{z}_{\nS},\boldsymbol{w}_{\nS})
+=\frac{1}{2}(\tdred{\LS_{\iS}}\tdviolet{q_{\nS}}+z_{\iS+1,\nS}-
+w_{\iS,\nS})\\
+\end{array}
+\right.\\[1cm]
+\text{for}\;\kS=1,\ldots,\mathsf{p}\\
+\left\lfloor
+\begin{array}{l}
+\tdred{\mathsf{Q}_{1+\mathsf{p}+\kS}}
+(\boldsymbol{z}_{\nS},\boldsymbol{w}_{\nS})
+=\frac{1}{2}(\tdred{\LS_{\kS}}\tdviolet{q_{\nS}}-z_{\kS+1,\nS}-
+w_{\kS,\nS})\\
+\tpyell{\prox_{\iota_{\{0\}}}}(2y_{\kS,\nS+1}-w_{\kS,\nS}) = 0.
+\end{array}
+\right.\\
+\end{array}
+\end{array}
+\right.\\
+\end{array}
+\nonumber
+\end{flalign*}
+\pause
+Then $({x}_{1,\nS})_{\nnn}$ converges weakly $\Pas$ to a 
+$\ZS$-valued random variable. 
+\end{exampleblock}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%% EXPERIMENT %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Numerical experiment}
+\justifying
+Consider the {\bf overlapping group lasso regression} described as
+follows: 
+\pause
+$\tpblue{\HS}=\tpblue{\RR^{\mathsf{N}}}$ and, for every 
+$\kS\in\{1,\dots,\mathsf{q}\}$,  
+$\emp\neq\mathsf{I}_{\kS}\subset\{1,\dots,\mathsf{N}\}$ and 
+\begin{equation}
+\nonumber
+\tdred{\LS_{\kS}}\colon\tpblue{\RR^{\mathsf{N}}}
+\to\tpblue{\RR^{\card\,\mathsf{I}_{\kS}}}\colon
+\mathsf{x}=(\upxi_{\jS})_{1\leq\jS\leq\mathsf{N}}\mapsto
+(\upxi_{\jS})_{\jS\in\mathsf{I}_{\kS}}.
+\end{equation}
+Further, $\bigcup_{\kS=1}^{\mathsf{q}}\mathsf{I}_{\kS}
+=\{1,\dots,\mathsf{N}\}$. The goal is to
+\begin{equation}
+\nonumber
+\minimize{\mathsf{x}\in\RR^{\mathsf{N}}}{\frac{\upalpha}{2}
+\|\mathsf{A}\mathsf{x}-\mathsf{b}\|^2+\dfrac{1}{\mathsf{q}}
+\sum_{\kS=1}^{\mathsf{q}}\|\tdred{\LS_{\kS}}\mathsf{x}\|},
+\end{equation}
+where $\mathsf{A}\in\RR^{\mathsf{M}\times\mathsf{N}}$,
+$\mathsf{b}\in\RR^\mathsf{M}$, and $\upalpha\in\RPP$.
+\end{frame}
+
+\begin{frame}{Numerical experiment}
+\begin{itemize}
+\justifying
+\item
+In the experiment $\mathsf{M}=1000$, $\mathsf{N}=3610$, 
+$\mathsf{q}=40$, and
+$\uplambda=5/\mathsf{q}^2$. 
+\item\pause
+The entries of 
+$\mathsf{A}$ are i.i.d. samples from a $\mathcal{N}(0,1)$
+distribution, and the entries of 
+$\mathsf{b}$ are i.i.d. samples from a $\mathcal{N}(100,100)$
+distribution. 
+\item\pause
+We split the function
+$\|\mathsf{A}\mathsf{x}-\mathsf{b}\|^2$ into $30$ blocks of $40$ 
+entries each, where the entries are selected in order without 
+overlap.
+\item\pause
+Finally, 
+\begin{align}
+\nonumber
+(\forall\kS\in\{1,\dots,\mathsf{p}\})\;\;
+\mathsf{I}_{\kS}=\{90\kS-89,\ldots,90\kS+10\}.
+\end{align}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Numerical experiment}
+\begin{figure}[ht!]
+\begin{tikzpicture}[scale=0.545]
+\definecolor{darkgray176}{RGB}{176,176,176}
+\begin{axis}[height=8cm,width=1.818\columnwidth, legend columns=1 
+cell align={left}, xmin=0, xmax=1200, ymin=-100, ymax=0,
+xtick distance=100,
+ytick distance=25,
+x grid style={darkgray176},xmajorgrids,
+y grid style={darkgray176},ymajorgrids,
+tick label style={font=\Large}, 
+legend cell align={left},
+legend style={at={(0.02,0.15)},anchor=west},
+axis line style=thick,]
+\addplot [ultra thick, dgreen]
+table {figures/ex2/F1_sol.txt};
+\addplot [ultra thick, orng]
+table {figures/ex2/F2_sol.txt};
+\addplot [ultra thick, dblue]
+table {figures/ex2/F3_sol.txt};
+%\addplot [ultra thick, dashed, dviolet]
+%table {figures/ex2/CH_sol.txt};
+%\addplot [ultra thick, dashed, dred]
+%table {figures/ex2/RN_sol.txt};
+\end{axis}
+\end{tikzpicture}
+\caption{
+\justifying
+Normalized error $20\log(\|x_{1,\nS}-x_\infty\|/
+\|x_{1,0}-x_\infty\|)$ (dB) versus execution time (s).
+{\bf\color{dgreen} Green}: Framework~1.
+{\bf\color{orng} Orange}: Framework~2. 
+{\bf\color{dblue} Blue}: Framework~3.
+%{\color{dred} Dashed red}: Algorithm~\eqref{e:71}.
+%{\color{dviolet} Dashed violet}: Algorithm~\eqref{e:72}.}
+}
+\label{fig:ex1}
+\end{figure}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%% DISCUSSION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Discussion}
+\justifying
+The frameworks differ in terms of storage
+requirements, use of \tdgreen{proximity} operators, and use of 
+\tdred{linear} operators.
+\begin{itemize}
+\justifying
+\item\pause
+Framework 1: It stores $2\mathsf{p}+3$ vectors and, for each of 
+the $\mathsf{p}+1$ random activation indices, there is one
+\tdgreen{proximity} evaluation.
+\item\pause
+Framework 2: It stores $4\mathsf{p}+5$ vectors. The first 
+$\mathsf{p}+1$ indices involve a \tdgreen{proximity} operator.
+The \tdred{linear} operators are used only if index 
+$\mathsf{p}+2$ is activated.
+\item\pause
+Framework 3: It stores $4\mathsf{p}+3$ vectors. 
+Moreover, out of the $2\mathsf{p}+1$ random activation 
+indices, those in $\{1,\ldots,\mathsf{p}+1\}$ involve a
+\tdgreen{proximity} operator, while those in 
+$\{\mathsf{p}+2,\ldots,\mathsf{p}+\mathsf{r}+1\}$
+do not require it. 
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Discussion}
+\justifying
+Although Framework~1 is the most efficient in terms of storage, it
+may not always be the fastest, especially when \tdgreen{proximity} 
+operators are computationally expensive or when the \tdred{linear} 
+operators are costly, which is the case in the experiment.
+\end{frame}
+
+\begin{frame}
+\titlepage
+\centering{
+\includegraphics[height=0.6cm]{ncsu.eps}}
+\end{frame}
+\end{document}
