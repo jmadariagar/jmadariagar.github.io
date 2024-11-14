@@ -6,8 +6,10 @@ I am currently a Ph.D. student in the [Department of Mathematics](https://math.s
 SAS Hall 4125; jimadari [at] ncsu.edu
 
 ## Publications
+### Preprints
+
 ### 2024
-* P. L. Combettes and J. I. Madariaga, Randomly activated proximal methods for nonsmooth convex minimization, [<em>Proceedings of the European Signal Processing Conference</em>](https://eusipcolyon.sciencesconf.org/), pp. 2642–2646. Lyon, France, August 26–30, 2024. [<a href ="https://javier.madariaga.cl/eusipco2024-2.pdf">pdf</a>]
+* P. L. Combettes and J. I. Madariaga, Randomly activated proximal methods for nonsmooth convex minimization, [<em>Proceedings of the European Signal Processing Conference</em>](https://eusipcolyon.sciencesconf.org/), pp. 2642–2646. Lyon, France, August 26–30, 2024. 
 
 ### 2021
 * D. Madariaga, L. Torrealba, J. I. Madariaga, J. Bustos-Jiménez, and B. Bustos, PePa Ping Dataset: Comprehensive Contextualization of Periodic Passive Ping in Wireless Networks [<em>ACM Multimedia Systems Conference (MMSys '21)</em>](https://2021.acmmmsys.org/), pp. 274-280, 2021. [[pdf](https://dl.acm.org/doi/abs/10.1145/3458305.3478456)]
