@@ -7,6 +7,7 @@ SAS Hall 4125; jimadari [at] ncsu.edu
 
 ## Publications
 ### Preprints
+* P. L. Combettes and J. I. Madariaga, Almost-surely convergent randomly activated monotone operator splitting methods. [<em>arXiv</em>](https://arxiv.org/abs/2403.10673) 
 
 ### 2024
 * P. L. Combettes and J. I. Madariaga, Randomly activated proximal methods for nonsmooth convex minimization, [<em>Proceedings of the European Signal Processing Conference</em>](https://eusipcolyon.sciencesconf.org/), pp. 2642–2646. Lyon, France, August 26–30, 2024. 
