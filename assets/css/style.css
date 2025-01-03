@@ -1,5 +1,5 @@
 .wrapper {
-    max-width: 80%;
+    max-width: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -22,8 +22,8 @@ header {
 }
 
 section p {
-    font-size: 18px;  /* Increase paragraph text size */
-    line-height: 1.8;  /* Add spacing between lines for readability */
+    font-size: 16px;  /* Increase paragraph text size */
+    line-height: 1.5;  /* Add spacing between lines for readability */
 }
 
 h1, h2, h3 {
@@ -44,7 +44,7 @@ footer {
 /* General Reset */
 body {
     font-family: 'Inter', 'Arial', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.25;
     color: #333;  /* Dark gray for text */
     margin: 0;
