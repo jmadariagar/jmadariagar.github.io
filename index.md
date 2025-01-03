@@ -11,7 +11,6 @@ SAS Hall 4125; jimadari [at] ncsu.edu
 
 ### 2024
 * J. I. Madariaga and H. Ramírez C., Facial approach for constructing stationary points for mathematical programs with cone complementarity constraints, [<em>Journal of Optimization Theory and Applications</em>](https://doi.org/10.1007/s10957-024-02562-8), vol. 204, no. 15, 2025.
-* 
 * P. L. Combettes and J. I. Madariaga, Randomly activated proximal methods for nonsmooth convex minimization, [<em>Proceedings of the European Signal Processing Conference</em>](https://eusipcolyon.sciencesconf.org/), pp. 2642–2646. Lyon, France, August 26–30, 2024. 
 
 ### 2021
