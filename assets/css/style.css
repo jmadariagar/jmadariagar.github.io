@@ -44,8 +44,8 @@ footer {
 /* General Reset */
 body {
     font-family: 'Inter', 'Arial', sans-serif;
-    font-size: 18px;
-    line-height: 1.75;
+    font-size: 14px;
+    line-height: 1.25;
     color: #333;  /* Dark gray for text */
     margin: 0;
     padding: 0;
