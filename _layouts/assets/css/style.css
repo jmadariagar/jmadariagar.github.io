@@ -1,0 +1,11 @@
+body {
+    max-width: 100%;  /* Use full width of the screen */
+    margin: 0 auto;   /* Center content */
+    padding: 0 20px;  /* Add some padding on the sides */
+    box-sizing: border-box;
+}
+
+.main-content {
+    max-width: 100%;
+    width: 100%;
+}
