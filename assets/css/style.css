@@ -6,13 +6,13 @@
 }
 
 section {
-    max-width: 800px;  /* Limits text width for readability */
-    margin: 0 auto;    /* Center the content */
-    padding: 0 20px;   /* Adds side padding for small screens */
+    width: 1200px;  /* Fixed width for large content */
+    margin: 0 auto;  /* Center the content */
+    padding: 0 20px; /* Side padding for small screens */
 }
 
 header {
-    max-width: 800px;
+    width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
