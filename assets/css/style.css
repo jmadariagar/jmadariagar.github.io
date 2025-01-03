@@ -6,7 +6,7 @@
 }
 
 section {
-    width: 600px;  /* Fixed width for large content */
+    width: 900px;  /* Fixed width for large content */
     margin: 40px auto;  /* Adds vertical space (folder effect) */
     padding: 40px;  /* Inner padding for section content */
     background-color: #f9f9f9;  /* Light background to simulate folder effect */
