@@ -6,13 +6,13 @@
 }
 
 section {
-    width: 1200px;  /* Fixed width for large content */
+    width: 600px;  /* Fixed width for large content */
     margin: 0 auto;  /* Center the content */
     padding: 0 20px; /* Side padding for small screens */
 }
 
 header {
-    width: 1200px;
+    width: 600px;
     margin: 0 auto;
     padding: 0 20px;
 }
