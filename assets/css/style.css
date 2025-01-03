@@ -1,11 +1,10 @@
-body {
-    max-width: 100%;  /* Use full width of the screen */
-    margin: 0 auto;   /* Center content */
-    padding: 0 20px;  /* Add some padding on the sides */
+.wrapper {
+    max-width: 100% !important;
+    margin: 0;
+    padding: 0 20px;
     box-sizing: border-box;
 }
 
-.main-content {
-    max-width: 100%;
-    width: 100%;
+section {
+    max-width: 100% !important;
 }
