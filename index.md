@@ -15,9 +15,6 @@ I am a Ph.D. student in the [Department of Mathematics](https://math.sciences.nc
 My research interests include optimization, nonlinear analysis, convex optimization, variational analysis, and stochastic optimization, with a particular focus on the interplay between randomness and deterministic methods in optimization.
 {: style="text-align: justify"}
 
-## Contact
-
-
 ## Publications
 <center> <h3>Preprints</h3> </center>
 * P. L. Combettes and J. I. Madariaga, Almost-surely convergent randomly activated monotone operator splitting methods. [[arXiv](https://arxiv.org/abs/2403.10673)] 
