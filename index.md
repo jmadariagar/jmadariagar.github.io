@@ -11,7 +11,11 @@ My research interests include optimization, nonlinear analysis, convex optimizat
 SAS Hall 4125; jimadari [at] ncsu.edu
 
 ## Publications
+div {
+  text-align: center;
+  
 ### Preprints
+}
 * P. L. Combettes and J. I. Madariaga, Almost-surely convergent randomly activated monotone operator splitting methods. [[arXiv](https://arxiv.org/abs/2403.10673)] 
 
 ### 2025
