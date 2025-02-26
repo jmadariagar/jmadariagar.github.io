@@ -1,10 +1,10 @@
 <div style="display: flex; align-items: center;">
     <div style="flex: 1; padding-right: 20px;">
-        <p>Contact me at: example@email.com</p>
-        <p>Phone: +123456789</p>
+        <h1>Javier I. Madariaga</h1>
+        <p>SAS Hall 4125; jimadari [at] ncsu.edu</p>
     </div>
     <div>
-        <img src="javier-mad(1).jpg" alt="Profile Image" style="max-width: 200px; height: auto;">
+        <img src="javier-mad(1).jpg" alt="Profile Image" style="max-width: 400px; height: auto;">
     </div>
 </div>
 
@@ -16,7 +16,7 @@ My research interests include optimization, nonlinear analysis, convex optimizat
 {: style="text-align: justify"}
 
 ## Contact
-SAS Hall 4125; jimadari [at] ncsu.edu
+
 
 ## Publications
 <center> <h3>Preprints</h3> </center>
