@@ -12,7 +12,7 @@ SAS Hall 4125; jimadari [at] ncsu.edu
 ### Preprints
 * P. L. Combettes and J. I. Madariaga, Almost-surely convergent randomly activated monotone operator splitting methods. [[arXiv](https://arxiv.org/abs/2403.10673)] 
 
-<p style="text-align: center;">### 2025</p>
+<center> <h1>heading 1</h1> </center>
 * J. I. Madariaga and H. Ramírez, Facial approach for constructing stationary points for mathematical programs with cone complementarity constraints, [<em>Journal of Optimization Theory and Applications</em>](https://link.springer.com/journal/10957), vol. 204, no. 15, 2025. [[pdf](https://doi.org/10.1007/s10957-024-02562-8)]
 
 ### 2024
