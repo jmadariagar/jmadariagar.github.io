@@ -1,6 +1,6 @@
 <div style="display: flex; align-items: center;">
     <div style="flex: 1; padding-right: 20px;">
-        <h0>Javier I. Madariaga</h0>
+        <h1>Javier I. Madariaga</h1>
         <p>SAS Hall 4125; jimadari [at] ncsu.edu</p>
     </div>
     <div>
