@@ -11,10 +11,10 @@
 </div>
 
 ## About
-I am a Ph.D. student in the [Department of Mathematics](https://math.sciences.ncsu.edu) at NC State University, advised by Professor [Patrick L. Combettes](https://pcombet.math.ncsu.edu). I completed my MSc in Mathematics Engineering at the [University of Chile](https://www.dim.uchile.cl/en/home/) in 2022, under the guidance of Professor [Héctor Ramírez](https://sites.google.com/site/hectorramirezhomepage/home). Previously, I worked as an Undergraduate Research Assistant at [NIC Chile Research Labs](https://niclabs.cl/), focusing on optimization models for Internet Quality of Service (QoS).
+I am a Ph.D. student in the [Department of Mathematics](https://math.sciences.ncsu.edu) at NC State University, advised by Professor [Patrick L. Combettes](https://pcombet.math.ncsu.edu). I completed my MSc in Applied Mathematics at the [University of Chile](https://www.dim.uchile.cl/en/home/) in 2022, under the guidance of Professor [Héctor Ramírez](https://sites.google.com/site/hectorramirezhomepage/home). I previously worked as an Undergraduate Research Assistant at [NIC Chile Research Labs](https://niclabs.cl/), where I focused on studying Internet Quality of Service (QoS) through stochastic and optimization models.
 {: style="text-align: justify"}
 
-My research interests include nonlinear analysis, convex optimization, and stochastic optimization, with a particular focus on the interplay between randomness and deterministic methods in optimization.
+My research interests include nonlinear analysis, convex optimization, and stochastic optimization, focusing on the interplay between randomness and deterministic optimization methods.
 {: style="text-align: justify"}
 
 ## Publications
