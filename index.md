@@ -2,6 +2,8 @@
     <div style="flex: 1; padding-right: 20px;">
         <h1>Javier I. Madariaga</h1>
         <p>SAS Hall 4125; jimadari [at] ncsu.edu</p>
+        <p>[Google Scholar](https://scholar.google.com/citations?hl=en&user=dJOv0pAAAAAJ)</p>
+        <p>[ORCiD](https://orcid.org/0000-0002-4132-5042)</p>
     </div>
     <div>
         <img src="javier-mad(1).jpg" alt="Profile Image" style="max-width: 400px; height: auto;">
