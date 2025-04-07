@@ -20,7 +20,6 @@ My research interests include nonlinear analysis and optimization, focusing on c
 ## Publications
 <center> <h3>Preprints</h3> </center>
 * P. L. Combettes and J. I. Madariaga, A geometric framework for stochastic iterations. [[arXiv](https://arxiv.org/abs/2504.027613)] 
-
 * P. L. Combettes and J. I. Madariaga, Almost-surely convergent randomly activated monotone operator splitting methods. [[arXiv](https://arxiv.org/abs/2403.10673)] 
 
 <center> <h3>2025</h3> </center>
