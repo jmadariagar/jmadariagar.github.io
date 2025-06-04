@@ -6,7 +6,7 @@
         <p><a href="https://orcid.org/0000-0002-4132-5042">ORCiD</a></p>
     </div>
     <div>
-        <img src="media/photo.jpg" alt="Profile Image" style="max-width: 400px; height: auto;">
+        <img src="media/pic.jpg" alt="Profile Image" style="max-width: 400px; height: auto;">
     </div>
 </div>
 
