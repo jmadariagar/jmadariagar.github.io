@@ -19,7 +19,7 @@ My research interests encompass nonlinear analysis and optimization, with a focu
 
 ## Publications
 <center> <h3>Preprints</h3> </center>
-* P. L. Combettes and J. I. Madariaga, A geometric framework for stochastic iterations. [[arXiv](https://arxiv.org/abs/2504.02761)] 
+* P. L. Combettes and J. I. Madariaga, A geometric framework for stochastic iterations. [[arXiv](https://arxiv.org/abs/2504.02761)]
 
 <center> <h3>2025</h3> </center>
 * P. L. Combettes and J. I. Madariaga, Almost-surely convergent randomly activated monotone operator splitting methods, [<em>SIAM Journal on Imaging Sciences</em>](https://www.siam.org/publications/siam-journals/siam-journal-on-imaging-sciences/), to appear.<br><br>
@@ -27,11 +27,11 @@ My research interests encompass nonlinear analysis and optimization, with a focu
 * J. I. Madariaga and H. Ramírez, Facial approach for constructing stationary points for mathematical programs with cone complementarity constraints, [<em>Journal of Optimization Theory and Applications</em>](https://link.springer.com/journal/10957), vol. 204, no. 15, 2025. [[pdf](https://doi.org/10.1007/s10957-024-02562-8)]
 
 <center> <h3>2024</h3> </center>
-* P. L. Combettes and J. I. Madariaga, Randomly activated proximal methods for nonsmooth convex minimization, [<em>Proceedings of the European Signal Processing Conference</em>](https://eusipcolyon.sciencesconf.org/), pp. 2642–2646. Lyon, France, August 26–30, 2024. 
+* P. L. Combettes and J. I. Madariaga, Randomly activated proximal methods for nonsmooth convex minimization, [<em>Proceedings of the European Signal Processing Conference</em>](https://eusipcolyon.sciencesconf.org/), pp. 2642–2646. Lyon, France, August 26–30, 2024.
 
 <center> <h3>2021</h3> </center>
-* D. Madariaga, L. Torrealba, J. I. Madariaga, J. Bustos-Jiménez, and B. Bustos, PePa Ping Dataset: Comprehensive Contextualization of Periodic Passive Ping in Wireless Networks [<em>ACM Multimedia Systems Conference (MMSys '21)</em>](https://2021.acmmmsys.org/), pp. 274-280, 2021. [[pdf](https://dl.acm.org/doi/abs/10.1145/3458305.3478456)]
-* D. Madariaga, J. I. Madariaga, J. Bustos-Jiménez, and B. Bustos, Improving Signal Strength Aggregation for Mobile Crowdsourcing Scenarios, [<em>MDPI Sensors</em>](https://www.mdpi.com/journal/sensors), vol. 21, p. 1084, 2021. [[pdf](https://www.mdpi.com/1424-8220/21/4/1084/htm)]
+* D. Madariaga, L. Torrealba, J. I. Madariaga, J. Bustos-Jiménez, and B. Bustos, PePa Ping Dataset: Comprehensive Contextualization of Periodic Passive Ping in Wireless Networks [<em>ACM Multimedia Systems Conference (MMSys '21)</em>](https://2021.acmmmsys.org/), pp. 274-280, 2021. [[pdf](https://dl.acm.org/doi/abs/10.1145/3458305.3478456)]<br><br>
+* D. Madariaga, J. I. Madariaga, J. Bustos-Jiménez, and B. Bustos, Improving Signal Strength Aggregation for Mobile Crowdsourcing Scenarios, [<em>MDPI Sensors</em>](https://www.mdpi.com/journal/sensors), vol. 21, p. 1084, 2021. [[pdf](https://www.mdpi.com/1424-8220/21/4/1084/htm)]<br><br>
 * D. Madariaga, J. I. Madariaga, M. Panza, J. Bustos-Jiménez, and B. Bustos, Detecting Anomalies at a TLD Name Server Based on DNS Traffic Predictions, [<em>IEEE Transactions on Network and Service Management</em>](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=4275028), vol. 18, pp. 1016-1030, 2021. [[pdf](https://doi.org/10.1109/TNSM.2021.3051195)]
 
 <center> <h3>2020</h3> </center>
