@@ -22,7 +22,8 @@ My research interests encompass nonlinear analysis and optimization, with a focu
 * P. L. Combettes and J. I. Madariaga, A geometric framework for stochastic iterations. [[arXiv](https://arxiv.org/abs/2504.02761)]
 
 <center> <h3>2025</h3> </center>
-* P. L. Combettes and J. I. Madariaga, Almost-surely convergent randomly activated monotone operator splitting methods, [<em>SIAM Journal on Imaging Sciences</em>](https://www.siam.org/publications/siam-journals/siam-journal-on-imaging-sciences/), to appear.<br><br>
+* P. L. Combettes and J. I. Madariaga, Almost-surely convergent randomly activated monotone operator splitting methods, [<em>SIAM Journal on Imaging Sciences</em>](https://www.siam.org/publications/siam-journals/siam-journal-on-imaging-sciences/), to appear. [[pdf]([https://dl.acm.org/doi/abs/10.1145/3405796.3405830](https://javier.madariaga.cl/media/siims3.pdf))]
+
 * P. L. Combettes and J. I. Madariaga, Stochastic block-iterative parallel subgradient projections method with super relaxations, [<em>Proceedings of the European Signal Processing Conference</em>](https://eusipco2025.org/), to appear.<br><br>
 * J. I. Madariaga and H. Ramírez, Facial approach for constructing stationary points for mathematical programs with cone complementarity constraints, [<em>Journal of Optimization Theory and Applications</em>](https://link.springer.com/journal/10957), vol. 204, no. 15, 2025. [[pdf](https://doi.org/10.1007/s10957-024-02562-8)]
 
