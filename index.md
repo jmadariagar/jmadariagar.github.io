@@ -53,5 +53,5 @@ My research interests encompass nonlinear analysis and optimization, with a focu
 * Linear Algebra (TA) [2017 Spring]
 
 ## Theses
-* **Condiciones de Optimalidad para la Programación Cónica con Restricciones de Complementariedad**, <em>Master's Thesis</em>, Universidad de Chile, 2022. [[pdf (in Spanish)](https://repositorio.uchile.cl/bitstream/handle/2250/191684/Condiciones-de-optimalidad-para-la-programacion-conica-con-restricciones-de-complementariedad.pdf?sequence=5)]
+* **Condiciones de Optimalidad para la Programación Cónica con Restricciones de Complementariedad**, <em>Master's Thesis</em>, Universidad de Chile, 2022. [[pdf](https://repositorio.uchile.cl/bitstream/handle/2250/191684/Condiciones-de-optimalidad-para-la-programacion-conica-con-restricciones-de-complementariedad.pdf?sequence=5)]
 {: style="text-align: justify"}
