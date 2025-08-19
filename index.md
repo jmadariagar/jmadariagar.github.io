@@ -39,6 +39,7 @@ My research interests encompass nonlinear analysis and optimization, with a focu
 
 ## Teaching
 <center> <h3>North Carolina State University, Department of Mathematics</h3> </center>
+* Calculus I (TA) [2025 Fall]
 * Calculus II (TA) [2024 Fall; 2025 Spring]
 * Calculus for Life and Management Sciences A (TA) [2024 Spring]
 
