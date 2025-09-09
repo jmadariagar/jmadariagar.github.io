@@ -23,12 +23,11 @@ My research interests encompass nonlinear analysis and optimization, with a focu
 
 <center> <h3>2025</h3> </center>
 * P. L. Combettes and J. I. Madariaga, Almost-surely convergent randomly activated monotone operator splitting methods, [<em>SIAM Journal on Imaging Sciences</em>](https://www.siam.org/publications/siam-journals/siam-journal-on-imaging-sciences/), to appear. [[pdf](https://javier.madariaga.cl/media/siims3.pdf)]<br><br>
-* P. L. Combettes and J. I. Madariaga, Stochastic block-iterative parallel subgradient projections method with super relaxations, [<em>Proceedings of the European Signal Processing Conference</em>](https://eusipco2025.org/), to appear. [[pdf](https://javier.madariaga.cl/media/eusipco2025.pdf)]<br><br>
 * P. L. Combettes and J. I. Madariaga,Stochastic block-iterative parallel subgradient projections
 method with super relaxations,
 <cite><a href ="http://www.eusipco2025.org/">
 Proceedings of the European Signal Processing Conference</a></cite>,
-pp. 2757&ndash;2761. Palermo, Italy, Sept. 7&ndash;12, 2025.
+pp. 2757&ndash;2761. Palermo, Italy, Sept. 7&ndash;12, 2025. [[pdf](https://javier.madariaga.cl/media/eusipco2025.pdf)]<br><br>
 * J. I. Madariaga and H. Ramírez, Facial approach for constructing stationary points for mathematical programs with cone complementarity constraints, [<em>Journal of Optimization Theory and Applications</em>](https://link.springer.com/journal/10957), vol. 204, no. 15, 2025. [[pdf](https://doi.org/10.1007/s10957-024-02562-8)]
 
 <center> <h3>2024</h3> </center>
