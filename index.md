@@ -23,7 +23,7 @@ My research interests encompass nonlinear analysis and optimization, with a focu
 
 <center> <h3>2025</h3> </center>
 * P. L. Combettes and J. I. Madariaga, Almost-surely convergent randomly activated monotone operator splitting methods, [<em>SIAM Journal on Imaging Sciences</em>](https://www.siam.org/publications/siam-journals/siam-journal-on-imaging-sciences/), to appear. [[pdf](https://javier.madariaga.cl/media/siims3.pdf)]<br><br>
-* P. L. Combettes and J. I. Madariaga,Stochastic block-iterative parallel subgradient projections
+* P. L. Combettes and J. I. Madariaga, Stochastic block-iterative parallel subgradient projections
 method with super relaxations,
 <cite><a href ="http://www.eusipco2025.org/">
 Proceedings of the European Signal Processing Conference</a></cite>,
