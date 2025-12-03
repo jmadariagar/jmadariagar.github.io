@@ -19,7 +19,7 @@ My research interests encompass nonlinear analysis and optimization, with a focu
 
 ## Publications
 <center> <h3>Preprints</h3> </center>
-* P. L. Combettes and J. I. Madariaga, Asymptotic analysis of stochastic splitting methods for multivariate monotone inclusions. [arXiv] 
+* P. L. Combettes and J. I. Madariaga, Asymptotic analysis of stochastic splitting methods for multivariate monotone inclusions. [arXiv]<br><br>
 * P. L. Combettes and J. I. Madariaga, A geometric framework for stochastic iterations. [[arXiv](https://arxiv.org/abs/2504.02761)]
 
 <center> <h3>2025</h3> </center>
