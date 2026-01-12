@@ -46,7 +46,7 @@ pp. 2757&ndash;2761. Palermo, Italy, September 7&ndash;12, 2025. [[pdf](https://
 <center> <h3>North Carolina State University, Department of Mathematics</h3> </center>
 * Calculus I (TA) [2025 Fall]
 * Calculus II (TA) [2024 Fall; 2025 Spring]
-* Calculus for Life and Management Sciences A (TA) [2024 Spring]
+* Calculus for Life and Management Sciences A (TA) [2024 Spring, 2026 Spring]
 
 <center> <h3>Universidad de Chile, Faculty of Physical and Mathematical Sciences</h3> </center>
 * Modeling and Optimization (TA) [2022 Fall]
