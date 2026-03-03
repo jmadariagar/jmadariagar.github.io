@@ -19,6 +19,7 @@ My research interests encompass nonlinear analysis and optimization, with a focu
 
 ## Publications
 <center> <h3>Preprints</h3> </center>
+* J. I. Madariaga, An abstract stochastic Haugazeau method for best approximation. [[arXiv](https://arxiv.org/abs/2603.00891)]<br><br>
 * P. L. Combettes and J. I. Madariaga, Asymptotic analysis of an abstract stochastic scheme for solving monotone inclusions. [[arXiv](https://arxiv.org/abs/2512.03023)]<br><br>
 * P. L. Combettes and J. I. Madariaga, A geometric framework for stochastic iterations. [[arXiv](https://arxiv.org/abs/2504.02761)]
 
